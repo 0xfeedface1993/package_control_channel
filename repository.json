@@ -1,35 +1,166 @@
 {
-	"schema_version": "3.0.0",
+	"$schema": "sublime://packagecontrol.io/schemas/repository",
+	"schema_version": "4.0.0",
 	"packages": [],
-	"dependencies": [],
-	"includes": [
-		"./repository/0-9.json",
-		"./repository/a.json",
-		"./repository/b.json",
-		"./repository/c.json",
-		"./repository/d.json",
-		"./repository/e.json",
-		"./repository/f.json",
-		"./repository/g.json",
-		"./repository/h.json",
-		"./repository/i.json",
-		"./repository/j.json",
-		"./repository/k.json",
-		"./repository/l.json",
-		"./repository/m.json",
-		"./repository/n.json",
-		"./repository/o.json",
-		"./repository/p.json",
-		"./repository/q.json",
-		"./repository/r.json",
-		"./repository/s.json",
-		"./repository/t.json",
-		"./repository/u.json",
-		"./repository/v.json",
-		"./repository/w.json",
-		"./repository/x.json",
-		"./repository/y.json",
-		"./repository/z.json",
-		"./repository/dependencies.json"
+	"libraries": [
+		{
+			"name": "wcmatch",
+			"description": "Python wcmatch module which provides enhanced file globbing and matching",
+			"author": "facelessuser",
+			"issues": "https://github.com/facelessuser/sublime-wcmatch/issues",
+			"releases": [
+				{
+					"base": "https://github.com/facelessuser/sublime-wcmatch",
+					"python_versions": [
+						"3.3"
+					],
+					"tags": true
+				},
+				{
+					"base": "https://pypi.org/project/wcmatch",
+					"asset": "wcmatch-*-py3-none-any",
+					"python_versions": [
+						"3.8"
+					]
+				}
+			]
+		},
+		{
+			"name": "orjson",
+			"description": "orjson is a fast, correct JSON library for Python.",
+			"author": "ijl",
+			"issues": "https://github.com/ijl/orjson/issues",
+			"releases": [
+				{
+					"base": "https://pypi.org/project/orjson",
+					"asset": "orjson-*-cp38-cp38-manylinux_2_17*_aarch64.whl",
+					"platforms": [
+						"linux-arm64"
+					],
+					"python_versions": [
+						"3.8"
+					]
+				},
+				{
+					"base": "https://pypi.org/project/orjson",
+					"asset": "orjson-*-cp38-cp38-manylinux_2_17*_x86_64.whl",
+					"platforms": [
+						"linux-x64"
+					],
+					"python_versions": [
+						"3.8"
+					]
+				},
+				{
+					"base": "https://pypi.org/project/orjson",
+					"asset": "orjson-*-cp38-cp38-macosx_*_universal2.whl",
+					"platforms": [
+						"osx-arm64",
+						"osx-x64"
+					],
+					"python_versions": [
+						"3.8"
+					]
+				},
+				{
+					"base": "https://pypi.org/project/orjson",
+					"asset": "orjson-*-cp38-*-win32.whl",
+					"platforms": [
+						"windows-x32"
+					],
+					"python_versions": [
+						"3.8"
+					]
+				},
+				{
+					"base": "https://pypi.org/project/orjson",
+					"asset": "orjson-*-cp38-*-win_amd64.whl",
+					"platforms": [
+						"windows-x64"
+					],
+					"python_versions": [
+						"3.8"
+					]
+				}
+			]
+		},
+		{
+			"name": "mdpopups",
+			"description": "Markdown Popups for Sublime",
+			"author": "facelessuser",
+			"issues": "https://github.com/facelessuser/sublime-markdown-popups/issues",
+			"releases": [
+				{
+					"base": "https://github.com/facelessuser/sublime-markdown-popups",
+					"python_versions": [
+						"3.3",
+						"3.8"
+					],
+					"tags": true
+				}
+			]
+		},
+		{
+			"name": "bracex",
+			"description": "Bracex creates arbitrary strings via brace expansion much like Bash's.",
+			"author": "facelessuser",
+			"issues": "https://github.com/facelessuser/sublime-bracex/issues",
+			"releases": [
+				{
+					"base": "https://github.com/facelessuser/sublime-bracex",
+					"python_versions": [
+						"3.3"
+					],
+					"tags": true
+				},
+				{
+					"base": "https://pypi.org/project/bracex",
+					"asset": "bracex-*-py3-none-any.whl",
+					"python_versions": [
+						"3.8"
+					]
+				}
+			]
+		},
+		{
+			"name": "typing-extensions",
+			"description": "Backported and Experimental Type Hints for Python 3.8+",
+			"author": "python",
+			"issues": "https://github.com/python/typing_extensions/issues",
+			"releases": [
+				{
+					"base": "https://pypi.org/project/typing-extensions",
+					"asset": "typing_extensions-*-py3-none-any.whl",
+					"python_versions": [
+						"3.8"
+					]
+				}
+			]
+		},
+		{
+			"name": "lsp_utils",
+			"author": "rchl",
+			"description": "Module with LSP-related utilities",
+			"issues": "https://github.com/sublimelsp/lsp_utils/issues",
+			"releases": [
+				{
+					"base": "https://github.com/sublimelsp/lsp_utils",
+					"python_versions": [
+						"3.3",
+						"3.8"
+					],
+					"sublime_text": "3154 - 4069",
+					"tags": "st3-v"
+				},
+				{
+					"base": "https://github.com/sublimelsp/lsp_utils",
+					"python_versions": [
+						"3.8"
+					],
+					"sublime_text": ">=4070",
+					"tags": true
+				}
+			]
+		}
 	]
 }
